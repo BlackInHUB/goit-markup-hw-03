@@ -20,6 +20,22 @@ ul {
   padding: 0;
 }
 
+body {
+  font-family: var(--primary-font-family);
+  background-color: var(--light-theme-background);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- SAME COMPONENTS ----- */
+.section {
+  padding: 94px 0;
+}
+
 .list {
   list-style: none;
 }
@@ -28,19 +44,12 @@ ul {
   text-decoration: none;
 }
 
-body {
-  font-family: var(--primary-font-family);
-  background-color: var(--light-theme-background);
-}
-
-/* ----- SAME COMPONENTS ----- */
 .conteiner {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid red; */
 }
 
 .section-title {
@@ -50,7 +59,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-light-background);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .logo-link {
@@ -60,12 +69,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accept-item-text-color);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden {
@@ -80,19 +83,11 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.current {
-  color: var(--accept-item-text-color);
-}
 /* ----- /SAME COMPONENTS ----- */
 
 /* ----- HEADER ----- */
 header {
   border-bottom: 1px solid #ececec;
-}
-
-.logo-link.top {
-  margin-right: 93px;
 }
 
 .logo-studio-top {
@@ -102,6 +97,10 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
+}
+
+.logo-link.top {
+  margin-right: 93px;
 }
 
 .navigation {
@@ -155,10 +154,13 @@ header {
   color: var(--accept-item-text-color);
 }
 
+.current {
+  color: var(--accept-item-text-color);
+}
 /* ----- /HEADER ----- */
 
 /* ----- HERO ----- */
-.hero {
+.section.hero {
   background-color: var(--dark-theme-background);
   padding: 200px 0;
   text-align: center;
@@ -168,11 +170,10 @@ header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .modal-btn {
@@ -196,10 +197,6 @@ header {
 /* ----- /HERO ----- */
 
 /* ----- BENEFITS ----- */
-.benefits-section {
-  padding: 94px 0;
-}
-
 .benefits-list {
   display: flex;
 }
@@ -226,8 +223,8 @@ header {
 /* ----- /BENEFITS ----- */
 
 /* ----- WE DO ----- */
-.we-do-section {
-  padding-bottom: 94px;
+.section.we-do {
+  padding-top: 0;
 }
 
 .we-do-list {
@@ -241,10 +238,8 @@ header {
 /* ----- /WE DO ----- */
 
 /* ----- OUR TEAM ----- */
-.our-team-section {
+.section.our-team {
   background-color: var(--middle-theme-background);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .our-team-list {
@@ -253,7 +248,6 @@ header {
 
 .our-team-list-item {
   background-color: #ffffff;
-  text-align: center;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -269,8 +263,7 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-light-background);
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .out-team-profession {
@@ -279,7 +272,11 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-light-background);
-  padding-bottom: 30px;
+}
+
+.our-team-item-text {
+  padding: 30px 0;
+  text-align: center;
 }
 /* ----- /OUR TEAM ----- */
 
@@ -322,10 +319,6 @@ footer {
 /* ===== PORTFOLIO ===== */
 
 /* ----- MAIN ----- */
-.portfolio-section {
-  padding: 94px 0;
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
